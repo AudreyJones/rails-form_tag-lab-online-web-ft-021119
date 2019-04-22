@@ -4,7 +4,9 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-
+  def show
+    @student = Student.find(params[:id])
+  end
 
   def new
 
@@ -12,10 +14,6 @@ class StudentsController < ApplicationController
 
   def create
     Student.create(first_name:params[:first_name], last_name:params[:last_name])
-  end
-
-  def show
-    @student = Student.find(params[:id])
   end
 
 end
