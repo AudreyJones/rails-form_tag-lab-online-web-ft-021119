@@ -200,6 +200,7 @@ DEPENDENCIES
   factory_bot_rails
   jbuilder (~> 2.0)
   jquery-rails
+  rack (~> 2.0.6)
   rails
   rspec-rails
   sass-rails (~> 5.0)
